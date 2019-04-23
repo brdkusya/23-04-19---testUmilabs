@@ -1,0 +1,34 @@
+.page-header{
+	padding-top: 165px;
+	padding-bottom: 142px;
+	text-align: center;
+}
+.page-header__title{
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 54px;
+	letter-spacing: -0.02em;
+	color: $text-dark;
+}
+.page-header__descr{
+	font-family: $roboto;
+	color: #4a4556;
+}
+.page-header__descr a{
+	color: $accent;
+	text-decoration: none;
+}
+.page-header__button{
+	font-family: 'gilroy', Arial;
+	font-weight: bold;
+	color: $text-dark;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+@media (min-width: $tablet-width) {
+	.page-header__title{
+		font-size: 48px;
+	}
+}

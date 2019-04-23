@@ -1,0 +1,91 @@
+.form{
+	padding-top: 100px;
+	padding-bottom: 120px;
+
+	background-color: #161616;
+}
+.form__title{
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 52px;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: #ffffff;
+
+	display: block;
+	margin-bottom: 60px;
+}
+.form__list{
+	margin: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+	counter-reset: myCounter;
+}
+.form__item{
+	list-style: none;
+
+	color: #ffffff;
+}
+.form__item::before {
+  counter-increment: myCounter;
+	content:counter(myCounter);
+	
+  color: $accent;
+	text-align: center;
+	line-height: 64px;
+	
+  display: inline-block;
+	width: 64px;
+	margin-right: 28px;
+	
+	border: 1px solid rgba(#ffffff, .23);
+	border-radius: 32px;
+}
+.form__item input{
+	display: block;
+	width: 100%;
+	height: 60px;
+	margin-top: 12px;
+	margin-bottom: 48px;
+
+	font-family: $roboto;
+	font-size: 24px;
+
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid rgba($bg, .1);
+}
+.form__item input:last-of-type{
+	margin-bottom: 60px;
+}
+.form__button{
+	width: 100%;
+	height: 54px;
+	
+	background-color: #ffffff;
+
+	border: none;
+	border-radius: 111px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+
+	font-family: $gilroy;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: $accent;
+}
+
+
+@media (min-width: $tablet-width) {
+	.form form{
+		width: 666px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.form__item input{
+		width: 575px;
+	}
+	.form__button{
+		width: 574px;
+	}
+}
