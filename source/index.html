@@ -5,9 +5,93 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<title>Document</title>
+	<title>Тестовое задание</title>
 </head>
 <body>
+	<header class="page-header">
+		<b class="page-header__title">Ты готов стать профессионалом?</b>
+		<p class="page-header__descr">Мы ищем <a href="#">Талантов</a> и <a href="#">саппортов</a> в команду. Решите на какую категорию вы претендуете.</p>
+		<a class="page-header__button" href="#">Заполнить анкету</a>
+	</header>
+	<main>
+		<h1 class="visually-hidden"></h1>
+
+		<section class="quality">
+			<h2 class="visually-hidden">Наши качества</h2>
+			<table class="quality__list">
+				<tr>
+					<th class="quality__title">Прокачиваем мир</th>
+					<th class="quality__descr">Вы хотите сделать мир лучше и не готовы ждать всю жизнь, чтобы начать это делать?</th>
+				</tr>
+				<tr>
+					<th class="quality__title">Мотивируем себя</th>
+					<th class="quality__descr">У вас есть собственная цель и вы не боитесь много работать, чтобы её достичь?</th>
+				</tr>
+				<tr>
+					<th class="quality__title">Используем лучшее</th>
+					<th class="quality__descr">Вы способны применять разные подходы для достижения своих целей?</th>
+				</tr>
+				<tr>
+					<th class="quality__title">Относимся с пониманием</th>
+					<th class="quality__descr">Вы не обвиняете других в свои неудачах и способны воспринимать критику?</th>
+				</tr>
+			</table>
+		</section>
+
+		<section class="about">
+			<h2 class="visually-hidden">О нас</h2>
+			<b class="about__title">Мы похожи</b>
+			<p>Не следует, однако забывать, что укрепление и развитие структуры представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации форм развития.</p>
+			<p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации дальнейших направлений развития. Равным образом дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт укрепление и развитие структуры позволяет оценить значение дальнейших направлений развития. Повседневная практика показывает, что консультация с широким активом представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+		</section>
+
+		<section class="advantages">
+			<h2 class="advantages__title">Преимущества работы с нами</h2>
+			<ul class="advantages__list">
+				<li class="advantages__item">
+					<h3 class="advantages__name">Делимся опытом</h3>
+					<p class="advantages__descr">Мы обучаем коллег всему, что знаем сами. Наш опыт уникален и проверен временем, а команда постоянно совершенствует свои знания и навыки.</p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__name">Стабильная зарплата</h3>
+					<p class="advantages__descr">Вы без задержек получаете официальную зарплату. Также мы оплачиваем больничные и даем возможность брать оплачиваемый отпуск до 4 недель в год.</p>
+				</li>
+				<li class="advantages__item">
+					<h3 class="advantages__name">Гибкий график</h3>
+					<p class="advantages__descr">Мы умеем работать с теми, кто еще не закончил получать образование. Вы можете работать неполный рабочий день, брать отгулы на время сессии и диплома.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="form">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<form>
+				<ol class="form__list">
+					<li class="form__item">
+						<label for="name">Фамилия и имя
+							<input type="text" id="name" placeholder="Сидоров Александр">
+						</label>
+					</li>
+					<li class="form__item">
+						<label for="email">Электронная почта
+							<input type="email" id="email" placeholder="Sidorov@yandex.ru">
+						</label>
+					</li>
+					<li class="form__item">
+						<label for="phone">Телефон
+							<input type="number" id="number" placeholder="+7 (999)-328-14-20">
+						</label>
+					</li>
+					<li class="form__item">
+						<label for="project">Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
+							<input type="text" id="project" placeholder="Свой проект по созданию универсальной инфраструктуры строительства">
+						</label>
+					</li>
+				</ol>
+				<button type="submit">Отправить</button>
+			</form>
+		</section>
+	</main>
 	<script src="js/main.js"></script>
 </body>
 </html>

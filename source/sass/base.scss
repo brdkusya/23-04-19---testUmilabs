@@ -1,28 +1,24 @@
-@include font-face("roboto-d", "../fonts/LatoRegular/LatoRegular");
-@include font-face("roboto-d", "../fonts/LatoLight/LatoLight", 300);
-@include font-face("roboto-d", "../fonts/LatoBold/LatoBold", bold);
-
-@include font-face("roboto-c", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular");
-@include font-face("roboto-c", "../fonts/RobotoCondensedLight/RobotoCondensedLight", 300);
-@include font-face("roboto-c", "../fonts/RobotoCondensedBold/RobotoCondensedBold", bold);
+@include font-face("roboto", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("gilroy", "../fonts/GilroyRegular/GilroyRegular");
+@include font-face("dinpro", "../fonts/DINProRegular/DINProRegular");
 
 body {
-    min-width: 320px;
-    margin: 0px;
-    padding: 0px;
+	min-width: 320px;
+	margin: 0px;
+	padding: 0px;
 
-    font-family: $d-font;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.65;
-    color: $text;
+	font-family: $dinpro;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 26px;
+	color: $text;
 
-    background-color: $bg-light;
+	background-color: $bg;
 }
 .container {
-    width: 280px;
-    padding: 0 20px;
-    margin: 0 auto;
+	width: 280px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
