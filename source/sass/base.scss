@@ -1,0 +1,57 @@
+@include font-face("roboto-d", "../fonts/LatoRegular/LatoRegular");
+@include font-face("roboto-d", "../fonts/LatoLight/LatoLight", 300);
+@include font-face("roboto-d", "../fonts/LatoBold/LatoBold", bold);
+
+@include font-face("roboto-c", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular");
+@include font-face("roboto-c", "../fonts/RobotoCondensedLight/RobotoCondensedLight", 300);
+@include font-face("roboto-c", "../fonts/RobotoCondensedBold/RobotoCondensedBold", bold);
+
+body {
+    min-width: 320px;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: $d-font;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.65;
+    color: $text;
+
+    background-color: $bg-light;
+}
+.container {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: no-wrap;
+	clip-path: inset(100%);
+	overflow: hidden;
+}
+
+// От 768px планшетная версия
+@media (min-width: 768px) {
+	.container {
+		width: 640px;
+		padding: 0 64px;
+	}
+}
+
+// От 1200px десктопная версия
+@media (min-width: 1200px) {
+	.container {
+		width: auto;
+		padding: 0 120px;
+	}
+}
