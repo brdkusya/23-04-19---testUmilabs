@@ -1,5 +1,8 @@
 @include font-face("roboto", "../fonts/RobotoRegular/RobotoRegular");
+
 @include font-face("gilroy", "../fonts/GilroyRegular/GilroyRegular");
+@include font-face("gilroy", "../fonts/GilroyBold/GilroyBold", bold);
+
 @include font-face("dinpro", "../fonts/DINProRegular/DINProRegular");
 
 body {
@@ -32,6 +35,10 @@ input[type="radio"].visually-hidden {
 	white-space: no-wrap;
 	clip-path: inset(100%);
 	overflow: hidden;
+}
+
+.error{
+	display: none;
 }
 
 // От 768px планшетная версия

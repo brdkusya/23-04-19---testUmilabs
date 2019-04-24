@@ -11,7 +11,7 @@
 	<header class="page-header">
 		<b class="page-header__title">Ты готов стать профессионалом?</b>
 		<p class="page-header__descr">Мы ищем <a href="#">талантов</a> и <a href="#">саппортов</a> в команду. Решите на какую категорию вы претендуете.</p>
-		<a class="page-header__button" href="#">Заполнить анкету</a>
+		<a class="page-header__button" href="#"><span></span>Заполнить анкету</a>
 	</header>
 	<main>
 		<h1 class="visually-hidden"></h1>
@@ -88,14 +88,19 @@
 					</li>
 					<li class="form__item">
 						<label for="project">Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
-							<input type="text" id="project" placeholder="Свой проект по созданию универсальной инфраструктуры строительства">
+							<textarea id="project" placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></textarea>
 						</label>
 					</li>
 				</ol>
+				<p class="error error--submit">* Заполните все поля</p>
+				<p class="error error--name">* Заполните поле "Имя и фамилия"</p>
+				<p class="error error--email">* Заполните поле "Электронная почта"</p>
+				<p class="error error--number">* Заполните поле "Телефон"</p>
+				<p class="error error--project">* Заполните поле про деятельность</p>
 				<button class="form__button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</main>
-	<script src="js/main.js"></script>
+	<script src="js/scripts.min.js"></script>
 </body>
 </html>

@@ -22,7 +22,11 @@
 	counter-reset: myCounter;
 }
 .form__item{
+	position: relative;
 	list-style: none;
+
+	padding-top: 20px;
+	padding-left: 92px;
 
 	color: #ffffff;
 }
@@ -30,32 +34,44 @@
   counter-increment: myCounter;
 	content:counter(myCounter);
 	
+	position: absolute;
+	top: 0;
+	left: 0;
+
   color: $accent;
 	text-align: center;
 	line-height: 64px;
 	
-  display: inline-block;
 	width: 64px;
 	margin-right: 28px;
 	
 	border: 1px solid rgba(#ffffff, .23);
 	border-radius: 32px;
 }
-.form__item input{
+.form__item input,
+.form__item textarea{
 	display: block;
 	width: 100%;
-	height: 60px;
 	margin-top: 12px;
 	margin-bottom: 48px;
 
 	font-family: $roboto;
 	font-size: 24px;
+	line-height: 35px;
+	color: #ffffff;
 
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid rgba($bg, .1);
 }
-.form__item input:last-of-type{
+.form__item input{
+	height: 60px;
+}
+.form__item textarea{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.form__item:last-child{
 	margin-bottom: 60px;
 }
 .form__button{
@@ -70,22 +86,35 @@
 
 	font-family: $gilroy;
 	font-size: 14px;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	color: $accent;
-}
 
+	cursor: pointer;
+}
 
 @media (min-width: $tablet-width) {
 	.form form{
-		width: 666px;
+		width: 575px;
 		margin-right: auto;
 		margin-left: auto;
 	}
-	.form__item input{
-		width: 575px;
-	}
 	.form__button{
 		width: 574px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.form__list{
+		padding: 0;
+		width: 575px;
+	}
+	.form__item{
+		width: 100%;
+		padding-left: 0;
+	}
+	.form__item::before {
+		left: -92px;
 	}
 }

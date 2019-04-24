@@ -60,13 +60,17 @@
 .advantages__descr{
 	margin: 0;
 	padding-top: 27px;
+
+	font-family: $roboto;
 }
 
 @media (min-width: $tablet-width) {
-	.advantages__list{
+	.advantages__wrapper{
 		width: 728px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+	.advantages__list{
 		padding-right: 0;
 		padding-left: 0;
 	}
@@ -75,16 +79,15 @@
 @media (min-width: $desktop-width) {
 	.advantages__wrapper{
 		width: 1170px;
-		margin-right: auto;
-		margin-left: auto;
 	}
 	.advantages__list{
-		width: 100%;
 		flex-direction: row;
-		margin-right: -65px;
+		justify-content: space-between;
+		width: 1170px;
 	}
 	.advantages__item{
-		margin-right: 65px;
+		box-sizing: border-box;
+		width: 345px;
 		margin-bottom: 0;
 	}
 }

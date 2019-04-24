@@ -14,6 +14,15 @@
 	display: block;
 	margin-bottom: 24px;
 }
+.about p{
+	font-family: $roboto;
+
+	margin: 0;
+	margin-bottom: 40px;
+}
+.about p:last-of-type{
+	margin-bottom: 0;
+}
 
 @media (min-width: $tablet-width) {
 	.about{
